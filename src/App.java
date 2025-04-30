@@ -54,9 +54,6 @@ int moda = Integer.parseInt(JOptionPane.showInputDialog("Considerando os valores
     }else{ 
         JOptionPane.showMessageDialog(null,"Resposta Errada!", "JStatistics", JOptionPane.ERROR_MESSAGE);  
     }
-
-
  }
-
 
  }
