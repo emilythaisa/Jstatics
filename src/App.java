@@ -58,11 +58,41 @@ public class App {
 
     }
     
-    }
     /*ajustar os bugs logicos do codigo menu estatistico
      * 
-     * crie um loo (do WHILE)
+     * crie um loop (do WHILE)
      * Para deixar o menu com opções do suário escolher uma nova opção ou sair
      * O usuário que vai decidir a hora de sair
      */
+   
+            String opcao;
+     do {
+        opcao = JOptionPane.showInputDialog(
+            "Qual filme você ja assistiu?\n" +
+            "1 - Star wars\n" +
+            "2 - Anabelle\n" +
+            "3 - Sair\n" +
+            "Digite a opção desejada:"
+        );
+
+        if (opcao == null || opcao.equals("3")) {
+            break; 
+        }
+
+        switch (opcao) {
+            case "1":
+                JOptionPane.showMessageDialog(null, "Você escolheu a opção 1.");
+                break;
+            case "2":
+                JOptionPane.showMessageDialog(null, "Você escolheu a opção 2.");
+                break;
+            default:
+                JOptionPane.showMessageDialog(null, "Opção inválida. Tente novamente.");
+                break;
+        }
+
+    } while (true);
+
+    JOptionPane.showMessageDialog(null, "Programa encerrado.");
+} 
 }
