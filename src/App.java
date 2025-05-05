@@ -59,13 +59,10 @@ public class App {
     }
     
     }
-
     /*ajustar os bugs logicos do codigo menu estatistico
      * 
      * crie um loo (do WHILE)
      * Para deixar o menu com opções do suário escolher uma nova opção ou sair
      * O usuário que vai decidir a hora de sair
      */
-
-     
 }
