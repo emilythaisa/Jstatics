@@ -65,34 +65,28 @@ public class App {
      * O usuário que vai decidir a hora de sair
      */
    
-            String opcao;
-     do {
-        opcao = JOptionPane.showInputDialog(
-            "Qual filme você ja assistiu?\n" +
-            "1 - Star wars\n" +
-            "2 - Anabelle\n" +
-            "3 - Sair\n" +
-            "Digite a opção desejada:"
-        );
-
-        if (opcao == null || opcao.equals("3")) {
-            break; 
-        }
-
-        switch (opcao) {
-            case "1":
-                JOptionPane.showMessageDialog(null, "Você escolheu a opção 1.");
-                break;
-            case "2":
-                JOptionPane.showMessageDialog(null, "Você escolheu a opção 2.");
-                break;
-            default:
-                JOptionPane.showMessageDialog(null, "Opção inválida. Tente novamente.");
-                break;
-        }
-
-    } while (true);
-
-    JOptionPane.showMessageDialog(null, "Programa encerrado.");
-} 
-}
+     
+     int opc = 0;
+        JOptionPane.showMessageDialog(null, "Switch e Loops", "AULA 3", 1);
+     
+                while(opc != 4){
+                    opc = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite a opção: \n1.Estatistica descritiva \n2.Probabilidade \n3.Modelos Probabilísticos\n4.Sair","Escolha",3));
+                 switch (opc) {
+                 case 1:
+                          JOptionPane.showMessageDialog(null, "Estatísticas Descritivas", "Escolha 1", 1);
+                          break;
+                 case 2:
+                          JOptionPane.showMessageDialog(null, "Probabilidade", "Escolha 2", 1);
+                          break;
+                 case 3:
+                          JOptionPane.showMessageDialog(null, "Modelos Probabilísticos", "Escolha 3", 1);
+                          break;
+                 case 4:
+                          JOptionPane.showMessageDialog(null, "Fim.....", "ACABOU", 0);
+                          break;
+            
+           
+                 }
+              }
+          }
+     }
