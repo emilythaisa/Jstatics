@@ -23,7 +23,7 @@ public class App {
          String[] espacoAmostral = {"1", "2", "3", "4", "5", "6"};
  
          String mensagem = "PENSE EM UM NÚMERO: {1, 2, 3, 4, 5, 6}\n" +
-                           "Probabilidade de cair esse número: aproximadamente 16,67%\n" +
+                           "Probabilidade de cair esse número:\n aproximadamente 16,67%\n" +
                            "Podemos começar?";
  
          while (true) {
@@ -59,8 +59,7 @@ public class App {
              } else if (resultado == 5) {
                  cont6++;
              }
-             String saida = "Número gerado: " + espacoAmostral[resultado] +
-                            "\n(Índice gerado: " + resultado + ")";
+             String saida = "Número gerado: "+"\n" + "                         "+espacoAmostral[resultado];
              JOptionPane.showMessageDialog(null, saida, "Resultado", JOptionPane.INFORMATION_MESSAGE);
          }
      }
