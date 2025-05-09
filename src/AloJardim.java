@@ -1,34 +1,40 @@
 import javax.swing.JOptionPane;
-//parte 1
+
 public class AloJardim {
     public static void main(String[] args) {
+        // Parte 1 
         JOptionPane.showMessageDialog(null, "Alô, Jardim!");
-      
-        //parte 2
-        String nome = JOptionPane.showInputDialog(null, "Digite seu nome");
-        String endereco = JOptionPane.showInputDialog(null, "Digite seu endereço");
 
-        JOptionPane.showMessageDialog(null, "Cadastro realizado!\n" + "Nome: " + nome + "\n" + "Endereço: " + endereco);
+        // Parte 2 
+        String nome = JOptionPane.showInputDialog(null, "SEJA BEM VINDO (A)\nDigite seu nome:");
+        String endereco = JOptionPane.showInputDialog(null, "Digite seu endereço:");
 
-        //parte 3
+        JOptionPane.showMessageDialog(null, "Cadastro realizado!\nNome: " + nome + "\nEndereço: " + endereco);
 
-        String areajardin = JOptionPane.showInputDialog(null,
-            "Pergunta de segurança, \nSe a área do seu jardim é 50m2 x 60m2,\nQual é a sua área total?");
-        
-        double media = Double.parseDouble(areajardin);
+        // Parte 3 
+        int resposta = JOptionPane.NO_OPTION;
 
-        if (media == 3000) {
-            JOptionPane.showMessageDialog(null, "Acertou!\nvamos para a próxima fase.");
-        } else {
-            JOptionPane.showMessageDialog(null, "Resposta Errada!",
-                "Finalizando", JOptionPane.ERROR_MESSAGE);
+        while (resposta != JOptionPane.YES_OPTION) {
+            String largurajardin = JOptionPane.showInputDialog(null, "Digite a largura do jardim (em metros):");
+            String comprimentojardin = JOptionPane.showInputDialog(null, "Digite o comprimento do jardim (em metros):");
+
+            double largura = Double.parseDouble(largurajardin);
+            double comprimento = Double.parseDouble(comprimentojardin);
+            double area = largura * comprimento;
+
+            resposta = JOptionPane.showConfirmDialog(null,"A área do seu jardim é " + area + " m². \nNÉ?","Confirmação", JOptionPane.YES_NO_OPTION);
         }
 
+        JOptionPane.showMessageDialog(null, "Obrigada pela informação!");
+    }
+}
+        
+        
+
 
 
 
         
 
 
-    }
-}
+
