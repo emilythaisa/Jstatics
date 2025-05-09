@@ -6,7 +6,7 @@ public class AloJardim {
         JOptionPane.showMessageDialog(null, "Alô, Jardim!");
 
         // Parte 2 
-        String nome = JOptionPane.showInputDialog(null, "SEJA BEM VINDO (A)\nDigite seu nome:");
+        String nome = JOptionPane.showInputDialog(null,  "SEJA BEM VINDO (A)\nDigite seu nome:");
         String endereco = JOptionPane.showInputDialog(null, "Digite seu endereço:");
 
         JOptionPane.showMessageDialog(null, "Cadastro realizado!\nNome: " + nome + "\nEndereço: " + endereco);
@@ -22,7 +22,7 @@ public class AloJardim {
             double comprimento = Double.parseDouble(comprimentojardin);
             double area = largura * comprimento;
 
-            resposta = JOptionPane.showConfirmDialog(null,"A área do seu jardim é " + area + " m². \nNÉ?","Confirmação", JOptionPane.YES_NO_OPTION);
+            resposta = JOptionPane.showConfirmDialog(null,"A área do seu jardim é " + area + " m². \nNÉ?","Vamos confirmar", JOptionPane.YES_NO_OPTION);
         }
 
         JOptionPane.showMessageDialog(null, "Obrigada pela informação!");
