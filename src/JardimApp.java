@@ -50,5 +50,7 @@ public class JardimApp {
             desconto = 0.0;
         }
         JOptionPane.showMessageDialog(null, "Desconto aplicado: " + (desconto * 100) + "%");
+ }
 
-        //---
+  }
+       
